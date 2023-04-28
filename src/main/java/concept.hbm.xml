@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.tmf.sms.sms_backend.model.Concept" table="Concept">
+		<id name="id" type="int" column="cid">
+         <generator class="native"></generator>
+       </id>
+       <property name="conceptName" type="string">
+          <column name="conceptName"/>
+       </property>
+       <property name="duration" type="double">
+          <column name="cduration"/>
+       </property>
+       <property name="conceptDescription" type="string">
+          <column name="conceptDescription"/>
+       </property>
+       
+	</class>
+</hibernate-mapping>
